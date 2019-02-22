@@ -21,13 +21,3 @@ DATASET VARIABLES:
 16)	"a5"
 17)	"a6"
 18)	"a7"
-QUESTION WE WANT TO ADDRESS:
-1)	Our first primary question is to answer which river characteristics or chemical compositions lead to each type of algae to bloom. So there will be a different combination for all 7 types of algae.
-2)	Conditions when the algae aren’t blooming at all (Combination of Variables).
-3)	Conditions when the algae are blooming in a large number(Combination of Variables).
-4)	Conditions when the algae aren’t blooming at all (Individual Variable).
-5)	Conditions when the algae are blooming in a large number(Individual Variable).
-6)	Which factor contributes on the highest level for the algae blooms.
-7)	Which factor contributes the least for the algae to bloom
-8)	Each River characteristics
-9)	Each chemical characteristics.
