@@ -44,12 +44,45 @@ ggplot(algaeDataset,aes(x=size)) + geom_bar(colour = "Red")
 
 Here we are doing a bivariate boxplot which is helping us to understand about algae 1 that in what kind of the size of the river does it blossom more, so here we say that when the river size is small algae 1 blossoms a lot and we also see lot of outliers river size is medium 
 
+Similarily by looking at the other bivariate boxplots graphs we can summarize the below for all the other 6 different types algaes with respect to river size,season,speed components:
+Algae2 = medium,summer,low
+Algae3 = medium,spring, medium
+Algae4 = medium,spring, medium
+Algae5 = medium, summer, medium
+Algae6 = medium, autumn, medium
+Alage7 = medium, autumn, medium
+
 ```{r}
 library(lattice)
+library(Hmisc)
 bwplot(size~a1,data=algaeDataset,xlab = "Algae A1",ylab = "River size")
 bwplot(season~a1,data=algaeDataset,xlab = "Algae A1",ylab = "Season")
 bwplot(speed~a1,data=algaeDataset,xlab = "Algae A1",ylab = "River speed")
+bwplot(size ~ a1,data=algae,panel=panel.bpplot,probs=seq(.01,.49,by=.01),datadensity=TRUE,ylab='River Size',xlab='Algal A1')
+bwplot(size~a2,data=algaeDataset,xlab = "Algae A2",ylab = "River size")
+bwplot(season~a2,data=algaeDataset,xlab = "Algae A2",ylab = "Season")
+bwplot(speed~a2,data=algaeDataset,xlab = "Algae A2",ylab = "River speed")
+bwplot(size~a3,data=algaeDataset,xlab = "Algae A3",ylab = "River size")
+bwplot(season~a3,data=algaeDataset,xlab = "Algae A3",ylab = "Season")
+bwplot(speed~a3,data=algaeDataset,xlab = "Algae A3",ylab = "River speed")
+bwplot(size~a4,data=algaeDataset,xlab = "Algae A4",ylab = "River size")
+bwplot(season~a4,data=algaeDataset,xlab = "Algae A4",ylab = "Season")
+bwplot(speed~a4,data=algaeDataset,xlab = "Algae A4",ylab = "River speed")
+bwplot(size~a5,data=algaeDataset,xlab = "Algae A5",ylab = "River size")
+bwplot(season~a5,data=algaeDataset,xlab = "Algae A5",ylab = "Season")
+bwplot(speed~a5,data=algaeDataset,xlab = "Algae A5",ylab = "River speed")
+bwplot(size~a6,data=algaeDataset,xlab = "Algae A6",ylab = "River size")
+bwplot(season~a6,data=algaeDataset,xlab = "Algae A6",ylab = "Season")
+bwplot(speed~a6,data=algaeDataset,xlab = "Algae A6",ylab = "River speed")
+bwplot(size~a7,data=algaeDataset,xlab = "Algae A7",ylab = "River size")
+bwplot(season~a7,data=algaeDataset,xlab = "Algae A7",ylab = "Season")
+bwplot(speed~a7,data=algaeDataset,xlab = "Algae A7",ylab = "River speed")
 ```
+
+```{r}
+plot(algaeDataset$a1 ~ algaeDataset$Cl)
+```
+
 
 #Multivariate Normal distribution check:
 
